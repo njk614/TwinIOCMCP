@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TwinEasy.McpServer.props" />
-</Project>

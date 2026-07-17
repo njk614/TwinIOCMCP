@@ -1,2 +1,23 @@
 /input
 /tmp
+
+# .NET 构建产物
+**/bin/
+**/obj/
+
+# 本地运行配置，避免账号、密码、内网地址进库
+src/**/appsettings.json
+src/**/appsettings.Development.json
+src/**/appsettings.*.local.json
+
+# IDE / 用户本机文件
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 日志与测试输出
+*.log
+TestResults/
+coverage/
