@@ -1,4 +1,4 @@
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -130,6 +130,9 @@ static void ConfigureTwinEasyServices(IServiceCollection services, IConfiguratio
     services.AddSingleton<ContextMcpTools>();
     services.AddSingleton<SceneMcpTools>();
     services.AddSingleton<SpatialObjectMcpTools>();
+    services.AddSingleton<TwinCategoryMcpTools>();
+    services.AddSingleton<SceneTwinCategoryMcpTools>();
+    services.AddSingleton<TwinInstanceLedgerMcpTools>();
 }
 
 static void ConfigureLogging(ILoggingBuilder logging, bool logToStdErr)

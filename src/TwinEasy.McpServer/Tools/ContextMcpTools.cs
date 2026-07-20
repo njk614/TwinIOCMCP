@@ -1,4 +1,4 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using ModelContextProtocol.Server;
 using TwinEasy.McpServer.Clients;
 using TwinEasy.McpServer.Models;
@@ -153,6 +153,83 @@ public sealed class ContextMcpTools
                         "update_scene_poi",
                         "rename_scene_poi",
                         "delete_scene_poi"
+                    },
+                    v1_1_twin_category_scope_note = "当前已实现的 twin_category 工具是租户级类别库工具，返回/接收 twinCategoryID；场景实例工具需要先通过场景级类别配置拿到 twinCategoryConfigID。",
+                    v1_1_tenant_twin_category_tools = new[]
+                    {
+                        "list_twin_category_types",
+                        "get_twin_category_default_fields",
+                        "list_twin_category_folders",
+                        "create_twin_category_folder",
+                        "update_twin_category_folder",
+                        "rename_twin_category_folder",
+                        "delete_twin_category_folder",
+                        "list_tenant_twin_categories",
+                        "list_twin_categories",
+                        "get_twin_category",
+                        "create_twin_category",
+                        "update_twin_category",
+                        "rename_twin_category",
+                        "delete_twin_category",
+                        "copy_twin_category",
+                        "move_twin_category"
+                    },
+                    v1_1_twin_category_tools = new[]
+                    {
+                        "list_twin_category_types",
+                        "get_twin_category_default_fields",
+                        "list_twin_category_folders",
+                        "create_twin_category_folder",
+                        "update_twin_category_folder",
+                        "rename_twin_category_folder",
+                        "delete_twin_category_folder",
+                        "list_tenant_twin_categories",
+                        "list_twin_categories",
+                        "get_twin_category",
+                        "create_twin_category",
+                        "update_twin_category",
+                        "rename_twin_category",
+                        "delete_twin_category",
+                        "copy_twin_category",
+                        "move_twin_category",
+                        "list_scene_twin_category_folders",
+                        "create_scene_twin_category_folder",
+                        "update_scene_twin_category_folder",
+                        "rename_scene_twin_category_folder",
+                        "delete_scene_twin_category_folder",
+                        "list_scene_twin_categories",
+                        "add_scene_twin_category",
+                        "get_scene_twin_category",
+                        "update_scene_twin_category",
+                        "rename_scene_twin_category",
+                        "delete_scene_twin_category"
+                    },
+                    v1_1_scene_twin_category_tools = new[]
+                    {
+                        "list_scene_twin_category_folders",
+                        "create_scene_twin_category_folder",
+                        "update_scene_twin_category_folder",
+                        "rename_scene_twin_category_folder",
+                        "delete_scene_twin_category_folder",
+                        "list_scene_twin_categories",
+                        "add_scene_twin_category",
+                        "get_scene_twin_category",
+                        "update_scene_twin_category",
+                        "rename_scene_twin_category",
+                        "delete_scene_twin_category"
+                    },
+                    v1_1_scene_twin_category_tools_planned = Array.Empty<string>(),
+                    v1_1_twin_instance_ledger_tools = new[]
+                    {
+                        "list_twin_ledger_fields",
+                        "create_twin_instance",
+                        "list_twin_instances",
+                        "get_twin_instance",
+                        "update_twin_instance",
+                        "delete_twin_instance",
+                        "upsert_twin_instance_ledger_data",
+                        "list_twin_instance_ledger_data",
+                        "delete_twin_instance_ledger_data"
                     },
                     optional_tools_not_used_by_default = new[]
                     {
